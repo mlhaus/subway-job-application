@@ -1,0 +1,488 @@
+<!doctype HTML>
+	<html lang="en/US">
+	<head>
+		<title>Application to a SubWay Future</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+<script src="js/jquery_3_3_1.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/jquery-ui.js" type="text/javascript"></script>
+<script src="js/jquery.validate.js" type="text/javascript"></script>
+
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/subway_style.css">
+
+
+
+  
+  <script src="js/validate_form.js" type="text/javascript"></script>
+</head>
+<body>
+
+<main class="container" style="border: 1px solid #000;">
+	<div class="container page_top">
+		&nbsp;
+	</div>
+	
+	
+<div class="row">	
+	<h2 class="para_spacing">Apply for this position:</h2>
+</div>
+<div class="row">
+	<p class="para_spacing">You can use the file uploader below to upload a resume</p>
+	<p class="para_spacing">, but you must still complete the form, because it is our project.</p>
+</div>
+<!--- Start upload Section--->
+<div class="row">
+	<div class="form-group">
+		<label for="upload_resume">Submit Resume</label>
+		<input type="file" class="form-control-file" id="upload_resume">
+	</div>
+</div>
+<!-- End  upload Section--->
+<div id="accordion"><!-- Starts Accordian Here-->
+ 
+
+
+<h3 id="person_info">Personal Information</h3>
+		<div>
+<form method="" action="" id="section_1">
+<!--- Start personal information Section--->
+<div class="row">
+<p class="para_spacing">Contact Information:</p>
+</div>
+
+<div class="row">
+	<div class="col-sm"><!--- First Column-->
+        <div class="form-group">
+		<label for="title">Title</label>
+		<select class="form-control-sm" id="title">
+			<option value=""> </option>
+			<option value="">Sir</option>
+			<option value="">Lord</option>
+			<option value="">Madame</option>
+			<option value="">Dame</option>
+		</select>
+		</div>
+		<div class="form-group">
+			<label for="first_name">First Name</label>
+			<input type="text" name="first_name" class="form-control-sm" id="first_name" placeholder="">
+		</div> 
+		<div class="form-group">
+		<label for="suffix">Suffix</label>
+		<select class="form-control-sm" id="suffix">
+			<option value="">  </option>
+			<option value="">PhD</option>
+			<option value="">EdD</option>
+			<option value="">Esq</option>
+			<option value="">III</option>
+		</select>
+		</div>
+		<div class="form-group">
+			<label for="phone">Phone Number</label>
+			<input type="text" name="phone" class="form-control-sm" id="phone" placeholder="">
+		</div> 
+		<div class="form-group">
+		<label for="country">Country</label>
+			<select class="form-control-sm" id="country">
+			<option value="usa">USA</option>
+			<option value="canada">Canada</option>
+			<option value="madagascar">Madagascar</option>
+		</select>
+		</div>
+	  
+    </div>
+    <div class="col-sm"><!--- Second Column-->
+    	<div class="form-group blank_form">
+    		&nbsp;
+    	</div>
+		<div class="form-group">
+			<label for="middle_namee">Middle Name</label>
+			<input type="text" name="middle_name" class="form-control-sm" id="middle_name" placeholder="">
+		</div> 
+		<div class="form-group">
+			<label for="phone">Former Name</label>
+			<input type="text" class="form-control-sm" id="former" placeholder="">
+		</div> 
+		<div class="form-group">
+			<label for="secondary_phone">Secondary Phone Number</label>
+			<input type="text" class="form-control-sm" id="secondary_phone" placeholder="">
+		</div> 
+    </div>
+    <div class="col-sm"><!--- Third Column-->
+    	<div class="form-group blank_form">
+    		&nbsp;
+    	</div>
+		<div class="form-group">
+			<label for="last_name">Last Name</label>
+			<input type="text" class="form-control-sm" id="middle_name" placeholder="">
+		</div> 
+    </div>
+</div>
+<!--End Personal Information Part 1-->
+<button type="button" id="submit_1" class="btn btn-success btn-sm">Continue</button>
+			</form>
+		</div>
+<h3 id="person_info_con">Personal Information Continued</h3>
+		<div>
+			<form method="" action="" id="section_2">
+<!--Personal Information Continued-->
+<div class="row">
+	<div class="col-sm-8">
+		<div class="form-group">
+			<label for="address_one">Address 1</label>
+			<input type="text" class="form-control-sm" id="address_one" placeholder="">
+		</div> 
+		<div class="form-group">
+			<label for="address_two">Address 2</label>
+			<input type="text" class="form-control-sm" id="address_two" placeholder="">
+		</div>
+		<div class="form-group">
+			<label for="city">City</label><br>
+			<input type="text" class="form-control-sm" id="city" placeholder="">
+		</div> 
+		<div class="form-group">
+			<label for="zip">Zip Code</label><br>
+			<input type="text" class="form-control-sm" id="zip" placeholder="">
+		</div>
+		<input type="checkbox" id="relocate" placeholder=""> Willing to relocate?
+		<br><br>
+	</div>
+</div>
+<!-- End personal information Section Section--->
+			
+			
+			<button type="button" id="submit_2" class="btn btn-success btn-sm">Continue</button>
+			</form>
+		</div>
+<h3 id="work_exp">Work Experience</h3>
+		<div>
+			<form method="" action="" id="section_3">
+<!--- Start Work Experience Section--->
+<p class="para_spacing">Previous Work Experience:</p>
+<div class="row">
+	<div class="col-sm-6">
+		<div class="form-group">
+			<label for="job_title">Job Title</label>
+			<input type="text" class="form-control-sm" id="job_title" placeholder="">
+		</div>
+		<div class="form-group">
+			<label for="company">Company / Organization</label>
+			<input type="text" class="form-control-sm" id="company" placeholder="">
+		</div>
+		<div class="form-group">
+			<label for="starting">Start Date</label>
+			<input type="date" class="form-control-sm" id="starting" placeholder="">
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="form-group">
+			<label for="location">Location</label>
+			<input type="text" class="form-control-sm" id="company" placeholder="">
+		</div>
+		<div class="form-group">
+			<label for="ending">Ending Date</label>
+			<input type="date" class="form-control-sm" id="start_date" placeholder="">
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-12">
+		<div class="form-group">
+			<label for="descrition">Description</label>
+			<textarea class="form-control" id="description" rows="3"></textarea>
+		</div>
+		<button type="button" class="btn btn-primary btn-sm" id="">Save</button>&nbsp;&nbsp;&nbsp;
+		<button type="button" class="btn btn-warning btn-sm" id="">Cancel</button>&nbsp;&nbsp;&nbsp;
+		<button type="button" class="btn btn-danger btn-sm" id="">Delete</button>
+		
+	</div>
+</div>
+<!-- End Work Experience Section--->
+			
+			
+			<button type="button" id="submit_3" class="btn btn-success btn-sm">Continue</button>
+			</form>
+		</div>
+<h3 id="education_exp">Educational Experience</h3>
+		<div>
+			<form method="" action="" id="section_4">
+<!--- Start Education   Section--->
+<p class="para_spacing">Education and Certifications:</p>
+<div class="row">
+	<div class="col-sm-6">
+		<div class="form-group">
+			<label for="school_name">School Name</label>
+			<input type="text" class="form-control-sm" id="school_name" placeholder="">
+		</div>
+		<div class="form-group">
+			<label for="ed_level">Level of Education / Degree</label>
+			<input type="text" class="form-control-sm" id="ed_level" placeholder="">
+		</div>
+		<div class="form-group">
+			<label for="major">Major</label><br>
+			<input type="text" class="form-control-sm" id="major" placeholder="">
+		</div>
+		<div class="form-group">
+			<label for="ed_in">Start Date</label>
+			<input type="date" class="form-control-sm" id="ed_in" placeholder="">
+		</div>
+	</div>
+	<div class="col-sm-6">
+	<div class="form-group blank_form_two">
+			&nbsp;
+		</div> 
+		<div class="form-group blank_form_two">
+			&nbsp;
+		</div>
+		<div class="form-group">
+			<label for="minor">Minor</label><br>
+			<input type="text" class="form-control-sm" id="minor" placeholder="">
+		</div>
+		<div class="form-group">
+			<label for="ed_out">Graduation Date</label>
+			<input type="date" class="form-control-sm" id="ed_out" placeholder="">
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-12">
+		<div class="form-group">
+			<label for="descrition">Description</label>
+			<textarea class="form-control" id="description" rows="3"></textarea>
+		</div>
+		<button type="button" class="btn btn-primary btn-sm" id="">Save</button>&nbsp;&nbsp;&nbsp;
+		<button type="button" class="btn btn-warning btn-sm" id="">Cancel</button>&nbsp;&nbsp;&nbsp;
+		<button type="button" class="btn btn-danger btn-sm" id="">Delete</button>
+		
+	</div>
+</div>
+<!-- End Education Section--->
+			
+			
+			<button type="button" id="submit_4" class="btn btn-success btn-sm">continue</button>
+		</div>
+<h3 id="skills">Skills and Traits</h3>
+		<div>
+			<form method="" action="" id="section_5">
+<!--- Start Special Skills Section--->
+<div class="row">
+	<p>Special Skills and Traits</p>
+</div>
+<div class="row">
+Skills
+	<div class="input-group">
+		<select class="custom-select" id="skills" aria-label="Skills">
+			<option selected>Choose...</option>
+			<option value="trust">Trust Worthy</option>
+			<option value="hard work">Hard Working</option>
+			<option value="smart">Smart as Hell</option>
+		</select>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="skill">Add Skill</button>
+  </div>
+</div>
+Behaviors
+<div class="input-group">
+		<select class="custom-select" id="Behaviors" aria-label="Behaviors">
+			<option selected>Choose...</option>
+			<option value="punctual">Punctual</option>
+			<option value="honest">Honest</option>
+			<option value="diligent">Diligent</option>
+		</select>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="behave">Add Behavior</button>
+  </div>
+</div>
+Motivations
+<div class="input-group">
+		<select class="custom-select" id="motivation" aria-label="Motivation">
+			<option selected>Choose...</option>
+			<option value="winning">Winning</option>
+			<option value="cash_money">Earning Potential</option>
+			<option value="impact">Making an Impact</option>
+		</select>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="motivation">Add Motivator</button>
+  </div>
+</div>
+Skill to Improve
+<div class="input-group">
+		<select class="custom-select" id="weakness" aria-label="Weakness">
+			<option selected>Choose...</option>
+			<option value="late">Timeliness</option>
+			<option value="doesnt_care">Care too much</option>
+			<option value="hygiene">Hygiene</option>
+		</select>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="weakness">Add Improvement</button>
+  </div>
+</div>
+<button type="button" class="btn btn-primary btn-sm" id="">Save</button>&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-warning btn-sm" id="">Cancel</button>&nbsp;&nbsp;&nbsp;
+</div>
+<!-- End Special Skills Section--->
+			
+			
+			<button type="button" id="submit_5" class="btn btn-success btn-sm">Continue</button>
+			</form>
+		</div>
+<h3 id="certs">Licenses and Certifications</h3>
+		<div>
+			<form method="" action="" id="section_6">
+<!-- Start Certifications Section--->
+<div class="row">
+	<p class="para_spacing">Licenses and Certifications:</p>
+</div>
+<div class="row">
+	<div class="col-sm-6">
+		<div class="form-group">
+			<label for="cert_name">License or Certification Name</label><br>
+			<input type="text" class="form-control-sm" id="cert_name" placeholder="">
+		</div>
+		<div class="form-group">
+			<label for="cert_in">Start Date</label>
+			<input type="date" class="form-control-sm" id="cert_in" placeholder="">
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="form-group">
+			<label for="cert_num">License Number</label><br>
+			<input type="text" class="form-control-sm" id="cert_num" placeholder="">
+		</div>
+		<div class="form-group">
+			<label for="cert_out">Completion Date</label>
+			<input type="date" class="form-control-sm" id="cert_out" placeholder="">
+		</div>
+	</div>
+	<button type="button" class="btn btn-primary btn-sm" id="">Save</button>&nbsp;&nbsp;&nbsp;
+	<button type="button" class="btn btn-warning btn-sm" id="">Cancel</button>&nbsp;&nbsp;&nbsp;
+
+</div>
+<!-- End Certifications Section--->	
+			
+			
+			<button type="button" id="submit_6" class="btn btn-success btn-sm">Continue</button>
+			</form>
+		</div>
+<h3 id="questions">Questions</h3>
+		<div>
+			<form method="" action="" id="section_7">
+				<!-- Start Questions Section--->
+<div class="row">
+	<p class="para_spacing">Questions:</p>
+</div>
+<div class="row">
+	<div class="form-group">
+	<label for="hear">How did you hear about this position?</label>
+		<select class="form-control-sm" id="hear">
+			<option value="">Options...</option>
+			<option value="newspaper">Newspaper</option>
+			<option value="television">Television</option>
+			<option value="internet">Internet</option>
+		</select>
+	</div>
+</div>
+
+<div class="row">
+	<br>
+	<p>Did a current employee refer you?</p>
+</div>
+<div class="row">
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="employee_refer" id="employee_refer" value="yes" checked>
+		<label class="form-check-label" for="exampleRadios1">
+		Yes
+	</label>
+	</div>
+</div>
+
+<div class="row">
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="employee_refer" id="employee_refer" value="no" >
+		<label class="form-check-label" for="exampleRadios1">
+		No
+	</label>
+	</div>
+</div>
+
+<div class="row">
+	<div class="form-group">
+		<label for="start_date">What date can you start?</label>
+		<input type="date" class="form-control-sm" id="start_date" placeholder="">
+	</div>
+</div>
+
+<hr style="width: 90%;">
+
+<div class="row">
+	<p>Are you legally authorized to work for a SubWay?</p>
+</div>
+<div class="row">
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="question_one" id="world_1" value="yes" checked>
+		<label class="form-check-label" for="exampleRadios1">
+		Yes
+		</label>
+	</div>
+</div>
+
+<div class="row">
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="question_one" id="world_1" value="no" >
+		<label class="form-check-label" for="exampleRadios1">
+		No
+		</label>
+	</div>
+</div>
+
+<div class="row">
+	<p>Do you need to have the world authorize your SubWay?</p>
+</div>
+<div class="row">
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="question_two" id="world_2" value="yes" checked>
+		<label class="form-check-label" for="exampleRadios1">
+		Yes
+		</label>
+	</div>
+</div>
+
+<div class="row">
+	<div class="form-check">
+		<input class="form-check-input" type="radio" name="question_two" id="world_2" value="no" >
+		<label class="form-check-label" for="exampleRadios1">
+		No
+	</label>
+	</div>
+</div>
+<hr style="width: 90%;">
+<div class="row">
+
+<div class="alert alert-primary" role="alert">
+  Once submitted, you will not be able to return for editing!<br>
+  Also, there is a bunch of legal stuff we excluded, so buyer beware.
+</div>
+
+</div>
+<br><br>
+<!-- End Special Skills Section--->
+			
+			
+<button type="submit" id="submit_7" class="btn btn-success btn-sm">Finish</button>
+&nbsp;&nbsp;&nbsp;
+<button type="button" class="btn btn-warning btn-sm" id="">Clear Form</button>
+			</form>
+		</div>
+
+</div><!-- Ends Accordian Here-->
+
+
+</main>
+</body>
+</html>

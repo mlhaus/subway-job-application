@@ -1,0 +1,17 @@
+body {
+	background-color: lightblue;
+	margin: 30px 10px;
+}
+
+.road {
+	position: relative;
+	background-image: url('../images/road.png');
+	height: 160px;
+	width: 1250px;
+	border: 1px solid #000;
+	
+}
+
+.car {
+	position: absolute;
+}
